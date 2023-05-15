@@ -1,0 +1,36 @@
+@font-face {
+    font-family: pjSans;
+    src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+:root {
+  /* PRIMARY COLORS */
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+
+  /* NUETRAL COLORS */
+  --vlgBlue: hsl(210, 60%, 98%);
+  --white: hsl(0, 0%, 100%);
+  --lgBlue1: hsl(211, 68%, 94%);
+  --lgBlue2: hsl(205, 33%, 90%);
+  --gBlue: hsl(219, 14%, 63%);
+  --dgBlue: hsl(219, 12%, 42%);
+  --vdBlue: hsl(224, 21%, 14%);
+  --mdfont: 500;
+  --boldfont: 800;
+}
+
+body {
+    font-family: 'pjSans';
+}
+
+p {
+    font-size: 16px;
+    color: var(--gBlue);
+}
+
+.ctn_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
