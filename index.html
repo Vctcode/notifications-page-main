@@ -11,7 +11,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <!-- Style link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Frontend Mentor | Notifications page</title>
 
@@ -27,39 +27,125 @@
     </style>
   </head>
   <body>
+    <div class="ctn">
+      <div class="ctn_title">
+        <h2>Notifications <span class="n_count">3</span></h2>
+        <a class="mkr" href="#">Mark all as read</a>
+      </div>
 
-   <div class="ctn">
+      <div class="ctn_tab">
+        <div class="tab unread">
+          <img
+            class="pp"
+            src="./assets/images/avatar-mark-webber.webp"
+            alt="avatar-mark-webber"
+          />
 
-    <div class="ctn_title">
-      <h2>Notifications 3</h2>
-      <p>Mark all as read</p>
+          <div class="text">
+            <a class="username" href="#">Mark Webber</a> reacted to your recent
+            post <a class="comm_link" href="#">My first tournament today!</a>
+
+            <span class="udot"></span>
+            <p>1m ago</p>
+          </div>
+        </div>
+        <div class="tab unread">
+          <img
+            class="pp"
+            src="./assets/images/avatar-angela-gray.webp"
+            alt="avatar-angela-gray"
+          />
+
+          <div class="text">
+            <a class="username" href="#">Angela Gray</a> followed you
+            <span class="udot"></span>
+            <p>5m ago</p>
+          </div>
+        </div>
+
+        <div class="tab unread">
+          <img
+            class="pp"
+            src="./assets/images/avatar-jacob-thompson.webp"
+            alt="avatar-jacob-thompson"
+          />
+
+          <div class="text">
+            <a class="username" href="#">Jacob Thompson</a> has joined your group
+            <a class="cc" href="#"> Chess Club</a>
+            <span class="udot"></span>
+            <p>1 day ago</p>
+          </div>
+        </div>
+
+        <div class="tab bg">
+          <img
+            class="pp"
+            src="./assets/images/avatar-rizky-hasanuddin.webp"
+            alt="avatar-rizky-hasanuddin"
+          />
+
+          <div class="text">
+            <a class="username" href="#">Rizky Hasanuddin</a> sent you a private
+            message
+            <p>5 day ago</p>
+
+            <div class="dm">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </div>
+          </div>
+        </div>
+
+        <div class="tab">
+          <img
+            class="pp"
+            src="./assets/images/avatar-kimberly-smith.webp"
+            alt="avatar-kimberly-smith"
+          />
+
+          <div class="text">
+            <a class="username" href="#">Kimberly Smith</a> commented on your
+            picture
+
+            <p>1 week ago</p>
+          </div>
+
+          <a class="pic" href="#"><img
+            src="./assets/images/image-chess.webp"
+            alt="avatar-kimberly-smith"
+          /></a>
+        </div>
+
+        <div class="tab">
+          <img
+            class="pp"
+            src="./assets/images/avatar-nathan-peterson.webp"
+            alt="avatar-nathan-peterson"
+          />
+
+          <div class="text">
+            <a class="username" href="#">Nathan Peterson</a> reacted to your recent
+            post 5 end-game strategies to increase your win rate
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+
+        <div class="tab">
+          <img
+            class="pp"
+            src="./assets/images/avatar-anna-kim.webp"
+            alt="avatar-anna-kim"
+          />
+
+          <div class="text">
+            <a class="username" href="#">Anna Kim </a> left the group <a class="cc" href="#"> Chess Club</a>
+            <p>2 weeks ago</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div>
-      <span>Mark Webber</span> reacted to your recent post My first tournament today! 
-      <span>1m ago</span>
-    </div>
-   
-
-    Angela Gray followed you 5m ago
-    
-    Jacob Thompson has joined your group Chess
-    Club 1 day ago
-    
-    Rizky Hasanuddin sent you a private message 5 days ago 
-    Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now
-    and I'm already having lots of fun and improving my game. 
-    
-    Kimberly Smith
-    commented on your picture 1 week ago 
-    
-    Nathan Peterson reacted to your recent
-    post 5 end-game strategies to increase your win rate 2 weeks ago
-    
-    Anna Kim
-    left the group Chess Club 2 weeks ago
-
-   </div>
 
     <div class="attribution">
       Challenge by
