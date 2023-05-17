@@ -29,8 +29,8 @@
   <body>
     <div class="ctn">
       <div class="ctn_title">
-        <h2>Notifications <span class="n_count">3</span></h2>
-        <a class="mkr" href="#">Mark all as read</a>
+        <h2>Notifications <span class="n_count" id="number">3</span></h2>
+        <a class="mkr" href="#" id="mark-unread">Mark all as read</a>
       </div>
 
       <div class="ctn_tab">
@@ -160,5 +160,32 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Vic</a>.
     </div>
+
+    <script>
+      const unread = document.getElementById('number');
+      const markAsRead = document.getElementById('mark-unread');
+      const unreadNotifications = document.querySelectorAll('div.unread');
+      const unreadIcon = document.querySelectorAll('span.udot_icon');
+
+      // Event to mark all as read
+      markAsRead.addEventListener('click', function() {
+        number = 0; // changes notification from 3 to 0
+        unread.innerText = number;
+
+        // Removes the "Mark all as read"
+        allRead = " ";
+        markAsRead.innerText = allRead;
+
+        // Removes the dark bg for unread 
+        unreadNotifications.forEach(function(notification) {
+      notification.classList.remove('unread');
+        })
+
+        // Removes the red icon of unread
+        unreadIcon.forEach(function(icon) {
+      icon.classList.remove('udot_icon');
+        })
+      })
+    </script>
   </body>
 </html>
