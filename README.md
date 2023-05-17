@@ -41,14 +41,26 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- JS
 
 
 ### What I learned
 Being used to linking fonts with cdn in my html, I tried importing a downloaded font and import into CSS. Not new to me, but haven't used that in a while, had to google and check on W3Schools on how to achieve that.
+
 
 ```css
 @font-face {
   font-family: pjSans;
   src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
 }
+```
+
+How to remove class from a list of elements more than one
+```js
+  const unreadIcon = document.querySelectorAll('span.udot_icon'); // to select all query 
+  
+  // Removes the 'udot_icon' class from all query found
+        unreadIcon.forEach(function(icon) {
+      icon.classList.remove('udot_icon');
+        })
 ```
